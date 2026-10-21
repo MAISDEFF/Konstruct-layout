@@ -20,6 +20,10 @@
   .services__cards {
     flex-wrap: wrap;
   }
+  .footer__inner {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 1024px) {
   [class*="__container"] {
@@ -39,6 +43,9 @@
   }
   .services__desc-text {
     text-align: center;
+  }
+  .footer__inner {
+    justify-content: start;
   }
 }
 @media screen and (max-width: 500px) {
