@@ -6,9 +6,19 @@
     justify-content: center;
     gap: 20px;
   }
+  .story__cards {
+    justify-content: center;
+  }
   .nav__inner {
     justify-content: center;
     gap: 20px;
+  }
+  .srvices__info {
+    justify-content: center;
+    gap: 30px;
+  }
+  .services__cards {
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -17,6 +27,18 @@
   }
   .story__inner {
     flex-wrap: wrap;
+  }
+  .srvices__info {
+    flex-wrap: wrap;
+  }
+  .services__info-title::after {
+    margin: 10px auto 0;
+  }
+  .services__desc {
+    flex-wrap: wrap;
+  }
+  .services__desc-text {
+    text-align: center;
   }
 }
 @media screen and (max-width: 500px) {
@@ -30,5 +52,14 @@
   .nav__links {
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .newsletter__form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .newsletter__form-email {
+    width: 150px;
   }
 }
