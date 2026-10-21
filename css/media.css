@@ -1,0 +1,34 @@
+@media screen and (max-width: 1400px) {
+  [class*="__container"] {
+    padding: 0 50px;
+  }
+  .story__inner {
+    justify-content: center;
+    gap: 20px;
+  }
+  .nav__inner {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  [class*="__container"] {
+    padding: 0 15px;
+  }
+  .story__inner {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .story__cards {
+    flex-wrap: wrap;
+  }
+  .nav__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav__links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
