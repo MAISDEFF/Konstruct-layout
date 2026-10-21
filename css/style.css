@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --text-color: #48555B;
+  --accent-color: #00A4E5;
+}
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+.story {
+  padding-top: 58px;
+  padding-bottom: 118px;
+}
+.story__container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 250px;
+  margin: 0 auto;
+}
+.story__title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2.31px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.story__title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: var(--accent-color);
+  margin: 10px auto 0;
+  margin-bottom: 50px;
+}
+.story__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.story__content {
+  max-width: 406px;
+}
+.story__content-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.story__content-accent {
+  color: #16ACE8;
+}
+.story__content-text {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.19px;
+}
+.story__cards {
+  display: flex;
+  gap: 20px
+}
+.story__card {
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.19px;
+  font-weight: 800;
+  color: var(--white-color);
+  text-transform: uppercase;
+  width: 140px;
+  height: 224px;
+  padding: 15px;
+}
+.story__card:nth-child(1) {
+  background-image: url(../img/story-1.png);
+}
+.story__card:nth-child(2) {
+  background-image: url(../img/story-2.png);
+}
+.story__card:nth-child(3) {
+  background-image: url(../img/story-3.png);
+}
+
+@media screen and (max-width: 1440px) {
+  .story__container {
+    padding: 0 50px;
+  }
+  .story__inner {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .story__container {
+    padding: 0 15px;
+  }
+  .story__inner {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .story__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
